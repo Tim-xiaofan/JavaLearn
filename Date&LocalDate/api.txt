@@ -1,0 +1,25 @@
+//Date
+	  //构造器
+	   System.out.println(new Date());
+	   //toString
+	   String s = new Date().toString();
+	   System.out.println(s);
+	   //存放在对象变量中变量只能用初始化
+	   Date birthday = new Date();
+	   
+	   
+	   //LocalDate
+	   //静态工场方法
+	   LocalDate ct = LocalDate.now();
+	   System.out.println(ct);
+	   
+	   //特定日期
+	   LocalDate newYearEve = LocalDate.of(2016, 12, 31);
+	   //getYear, getMonthValue, getDayOfMonth
+	   int year = newYearEve.getYear();
+	   int month = newYearEve.getMonthValue();
+	   int day = newYearEve.getDayOfMonth();
+	   
+	   //plusDay
+	   LocalDate thousandDaysLater = newYearEve.plusDays(1000);
+	   System.out.println("1000 days later of 2016-12-31 is " + thousandDaysLater + ".");
